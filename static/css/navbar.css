@@ -1,5 +1,9 @@
-#navbar{
-    background-color: #fff8;
+ul{
+    list-style-type: none;
+}
+
+.navbar{
+    background-color: #fff7;
     height: 15vh;
     width: 95vw;
     margin: auto;
@@ -12,14 +16,15 @@
     align-items: center;
     font-size: 10px;
     max-height: 60px;
+    
 }
-#left_navbar{
+.left_navbar{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-#icon{ 
+.icon{ 
     margin-left: 0.7em;
     height: 4.5em;
     width: 6em;
@@ -28,20 +33,21 @@
     box-sizing: border-box;
     border-radius: 15px;
 }
-#title_navbar{ /** h1 o h2 ?*/
+.title_navbar{ /** h1 o h2 ?*/
     margin-left: 1.2vw;
     font-family: sans-serif;
     font-size: 20px;
 }
-#center_navbar_father{
+.center_navbar_father{
     justify-content: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-left: 5vw;
+    
 }
-#center_navbar_father{
+.center_navbar_father{
     display: flex;
     justify-content: center;
     width: 65vw;
@@ -58,8 +64,33 @@
 .text_linked{
     text-decoration: none;
     color: #000;
-    background-color: #0002;
+    
     padding: 1.1vw;
     box-sizing: border-box;
     border-radius: 8px;
+    animation-name: change-color1;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.text_linked:hover{
+
+    animation-name: change-color2;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes change-color1 {
+    from{
+        background-color: #0002;
+    }
+    to{
+        background-color: #0000;
+    }
+}
+@keyframes change-color2 {
+    
+    to{
+        background-color: #0002;
+    }
 }
