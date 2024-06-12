@@ -94,7 +94,7 @@ ul{
         background-color: #0002;
     }
 }
-.button{
+.button_menu{
     background-color: transparent;
     
     height: 5vw;
@@ -102,7 +102,7 @@ ul{
     border: none;
     cursor: pointer;
 }
-.button span{
+.button_menu span{
     margin: 4px auto;
     width: 60%;
     height: 4px;
@@ -110,6 +110,7 @@ ul{
     display: block;
     cursor: pointer;
 }
+
 
 .dropdown-menu{
     background-color: #000;
@@ -119,12 +120,22 @@ ul{
     float: right;
 
 }
+.dropdown-subcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.open_dropdown_menu{
+    max-height: 100px;
+    opacity: 0;
+    transition: 4s;
+}
 .dropdown-elements{
     border-color: #ffffff;
     border: 2px 2px 2px 2px;
     border-style: solid;
     text-align: center;
     line-height: 60px;
-    padding-top: 20px;
+    width: 100%;
     margin-right: 20vw;
+
 }
