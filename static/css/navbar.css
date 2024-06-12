@@ -94,3 +94,37 @@ ul{
         background-color: #0002;
     }
 }
+.button{
+    background-color: transparent;
+    
+    height: 5vw;
+    width: 5vw;
+    border: none;
+    cursor: pointer;
+}
+.button span{
+    margin: 4px auto;
+    width: 60%;
+    height: 4px;
+    background-color:  #000;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    background-color: #000;
+    border-color: #ffffff;
+    border: 2px 2px 2px 2px;
+    border-style: solid;
+    float: right;
+
+}
+.dropdown-elements{
+    border-color: #ffffff;
+    border: 2px 2px 2px 2px;
+    border-style: solid;
+    text-align: center;
+    line-height: 60px;
+    padding-top: 20px;
+    margin-right: 20vw;
+}
