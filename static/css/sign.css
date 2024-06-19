@@ -9,16 +9,17 @@
 }
 
 .sign_form-content .sign_form {
-    box-shadow: 2px 4px 12px #aaa;
+    box-shadow: 2px 4px 13px #e4dddd;
     background: #fff;
     display: flex;
-    width: 40%;
-    max-width: 1030px;
+    width: 35vw;
+    height: auto;
+    max-width: 700px;
     flex-wrap: wrap;
     align-content: center;
-    padding: 40px;
-    border-radius: 25px;
-    border-left:2px solid #000; 
+    padding: 2.4rem;
+    border-radius: 2rem;
+    border-left:2px solid #9b9b9b; 
     border-bottom:2px solid #7a7a7a;
 }
 
@@ -33,13 +34,15 @@
     margin-bottom: 15px;
     width: 100%;
     border:none;
-    border-bottom: 3px #000 solid;
+    border-bottom: 2px #000 solid;
 
 }
 
+.sign_form-content .sign_form input::placeholder {
+    font-size: .7rem;
+}
+
 .sign_form-content .sign_form input:hover {
-    transition: border-bottom;
-    transition-duration: s;
     border-bottom: 3px #972f06 solid;
 
 }
@@ -47,7 +50,7 @@
 .sign_form-content .sign_form input:focus {
     border: none;
     outline: none;
-    border-bottom: 3px #258807 solid;
+    border-bottom: 2px #258807 solid;
 }
 
 .sign_form-content .sign_form input[type='submit'] {
@@ -62,6 +65,9 @@
 
 .sign_form-content .sign_form input[type='submit']:hover {
     cursor: pointer;
-    background: #bbb;
+    background: #32ac0d;
 }
 
+.sign_form-content .sign_form input[type='submit']:active {
+    background: #42c41b;
+}
