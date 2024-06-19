@@ -1,6 +1,6 @@
-h1 {
-    color: red;
-}
-body{
-    background-color: rgb(37, 35, 117);
+@import url('sign.css');
+
+body {
+    font-family: sans-serif;
+    background-image: url('../picture/8207.jpg');
 }

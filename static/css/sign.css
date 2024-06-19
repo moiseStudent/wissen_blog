@@ -1,0 +1,67 @@
+.title_form-sign {
+    text-align: center;
+}
+
+.sign_form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_form-content .sign_form {
+    box-shadow: 2px 4px 12px #aaa;
+    background: #fff;
+    display: flex;
+    width: 40%;
+    max-width: 1030px;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 40px;
+    border-radius: 25px;
+    border-left:2px solid #000; 
+    border-bottom:2px solid #7a7a7a;
+}
+
+.sign_form-content .sign_form label {
+    font-family: sans-serif;
+    font-size: .9rem;
+    margin: 5px;
+
+}
+
+.sign_form-content .sign_form input {
+    margin-bottom: 15px;
+    width: 100%;
+    border:none;
+    border-bottom: 3px #000 solid;
+
+}
+
+.sign_form-content .sign_form input:hover {
+    transition: border-bottom;
+    transition-duration: s;
+    border-bottom: 3px #972f06 solid;
+
+}
+
+.sign_form-content .sign_form input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px #258807 solid;
+}
+
+.sign_form-content .sign_form input[type='submit'] {
+    margin: 10px auto;
+    width: 90%;
+    border:none;
+    padding: 15px;
+    border-radius: 10px;
+    background: #258807;
+    color:#fff;
+}
+
+.sign_form-content .sign_form input[type='submit']:hover {
+    cursor: pointer;
+    background: #bbb;
+}
+

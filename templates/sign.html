@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+<!-- TItulo del sitio web-->
+{% block title %}
+    {{super()}} Login
+{% endblock %}
+
+{% block content%}
+
+{% include 'navbar.html' %}
+
+    <h1 class="title_form-sign">Sign up</h1>
+
+    <div class="sign_form-content">
+
+            <form action="{{login}}" method="POST" class="sign_form">
+
+                    <label for="name_user">Nombre: </label>
+                    <input type="text" name="name_user">
+            
+                    <label for="surname_user">Apellido: </label>
+                    <input type="text" name="surname_user">
+            
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="">
+            
+                    <label for="password">Crear contrasena: </label>
+                    <input type="password" name="password" id="">
+            
+                    <label for="password-verify">Repetir contrasena: </label>
+                    <input type="password" name="password-verify" id="">
+            
+                    <input type="submit" value="Registrarse">
+                    
+                </form>
+
+    </div>
+
+
+
+{% endblock %}
