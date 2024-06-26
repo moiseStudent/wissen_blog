@@ -6,7 +6,7 @@ header {
     color:#fff;
 }
 .navbar{
-    background: #2b25d954;
+    background: #23B8EB;
     height: 15vh;
     width: 95vw;
     margin: auto;
@@ -38,7 +38,7 @@ header {
     box-sizing: border-box;
     border-radius: 15px;
 }
-.title_navbar{ /** h1 o h2 ?*/
+.title_navbar{ 
     margin-left: 1.2vw;
     font-family: sans-serif;
     font-size: 20px;
@@ -76,7 +76,7 @@ header {
 }
 .text_linked{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 20px;
     font-weight: 500;
     
@@ -95,46 +95,12 @@ header {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-/*
-@keyframes change-color1 {
-    from{
-        background-color: #0002;
-    }
-    to{
-        background-color: #0000;
-    }
-}
-@keyframes change-color2 {
-    
-    to{
-        background-color: #0002;
-    }
-}*/
 
 #contacto {
     background: #1ebda0;
 }
 .button_container{/*para evitar la compresion del el elemento button*/
     display: none;
-}
-.button_menu{
-    background-color: transparent;
-    
-    height: 40px;
-    width: 40px;
-    border: none;
-    cursor: pointer;
-    
-    display: block;
-}
-.button_menu span{
-    margin: 4px auto;
-    width: 60%;
-    height: 4px;
-    background-color:  #1ebda0;
-    display: block;
-    cursor: pointer;
-    color:#fff;
 }
 
 .dropdown_menu{
@@ -170,65 +136,21 @@ header {
 .open_dropdown_subcontainer{
     border-color: #fff;
 }
-.dropdown_elements{
-    text-align: center;
-}
 
 .button_container{/*para evitar la compresion del el elemento button*/
     display: flex;
 }
 .button_menu{
     background-color: transparent;
-    
     height: 40px;
     width: 40px;
     border: none;
     cursor: pointer;
+    display: block;
+    background-image: url('..\picture\three_lines.png');
+    background-size: contain;
     
-    display: block;
-}
-.button_menu span{
-    margin: 4px auto;
-    width: 60%;
-    height: 4px;
-    background-color:  #000;
-    display: block;
-    cursor: pointer;
 }
 
-.dropdown_menu{
-    background-color: transparent;
-    border-style: solid;
-    border-color: transparent;
-    border-width: 2px;
-    height: 50vh;
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-right: 4vw;
-    width: 25vw;
-    max-width: 0;
-    transition: 0.1s;
-    overflow: hidden;
-}
 
-.open_dropdown_menu{
-    max-width: 25vw;
-    transition: 0.1s;
-    border-color: #fff;
-    background-color: #000;
-}
-.dropdown_subcontainer{
-    border-color:transparent;
-    border-style: solid;
-    border-width: 0 0 2px 0;
-    flex-grow: 1;
-    overflow: hidden;
-}
-.open_dropdown_subcontainer{
-    border-color: #fff;
-}
-.dropdown_elements{
-    text-align: center;
-}
+

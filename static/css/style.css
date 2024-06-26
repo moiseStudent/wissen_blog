@@ -2,8 +2,9 @@
 
 body {
     font-family: sans-serif;
-    background-image: url('../picture/BodyBackground.jpeg');
+    background-image: url('');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position-x: center
+    background-position-x: center;
+    background-color:#3590F3
 }

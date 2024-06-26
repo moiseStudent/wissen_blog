@@ -11,7 +11,7 @@
 
 .sign_form-content .sign_form {
     box-shadow: 2px 4px 12px #aaa;
-    background: #fff;
+    background: #62BFED;
     display: flex;
     width: 40%;
     max-width: 1030px;
@@ -19,7 +19,7 @@
     align-content: center;
     padding: 40px;
     border-radius: 25px;
-    border-left:2px solid #FFF; 
+    border-left:2px solid #62bfed79; 
     border-bottom:2px solid #7a7a7a;
 }
 
@@ -35,7 +35,8 @@
     width: 100%;
     border:none;
     border-bottom: 3px #000 solid;
-
+    color: #C2BBF0;
+   
 }
 
 .sign_form-content .sign_form input:hover {
@@ -63,6 +64,9 @@
 
 .sign_form-content .sign_form input[type='submit']:hover {
     cursor: pointer;
-    background: #bbb;
+    background: #C2BBF0;
+}
+.sign_form input {
+    background-color: #F1E3F3;
 }
 
