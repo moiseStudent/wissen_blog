@@ -130,9 +130,9 @@ ul{
     border-style: solid;
     border-color: transparent;
     border-width: 2px;
-    float: right;
     height: 50vh;
     display: flex;
+    position: absolute;
     flex-direction: column;
     flex-wrap: wrap;
     margin-right: 4vw;
