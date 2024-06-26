@@ -1,5 +1,6 @@
 .title_form-sign {
     text-align: center;
+    color:#23D9B7;
 }
 
 .sign_form-content {
@@ -9,17 +10,16 @@
 }
 
 .sign_form-content .sign_form {
-    box-shadow: 2px 4px 13px #e4dddd;
+    box-shadow: 2px 4px 12px #aaa;
     background: #fff;
     display: flex;
-    width: 35vw;
-    height: auto;
-    max-width: 700px;
+    width: 40%;
+    max-width: 1030px;
     flex-wrap: wrap;
     align-content: center;
-    padding: 2.4rem;
-    border-radius: 2rem;
-    border-left:2px solid #9b9b9b; 
+    padding: 40px;
+    border-radius: 25px;
+    border-left:2px solid #FFF; 
     border-bottom:2px solid #7a7a7a;
 }
 
@@ -34,15 +34,13 @@
     margin-bottom: 15px;
     width: 100%;
     border:none;
-    border-bottom: 2px #000 solid;
+    border-bottom: 3px #000 solid;
 
-}
-
-.sign_form-content .sign_form input::placeholder {
-    font-size: .7rem;
 }
 
 .sign_form-content .sign_form input:hover {
+    transition: border-bottom;
+    transition-duration: s;
     border-bottom: 3px #972f06 solid;
 
 }
@@ -50,7 +48,7 @@
 .sign_form-content .sign_form input:focus {
     border: none;
     outline: none;
-    border-bottom: 2px #258807 solid;
+    border-bottom: 3px #258807 solid;
 }
 
 .sign_form-content .sign_form input[type='submit'] {
@@ -59,15 +57,12 @@
     border:none;
     padding: 15px;
     border-radius: 10px;
-    background: #258807;
-    color:#fff;
+    background: #1ebda0;
+    color:#000;
 }
 
 .sign_form-content .sign_form input[type='submit']:hover {
     cursor: pointer;
-    background: #32ac0d;
+    background: #bbb;
 }
 
-.sign_form-content .sign_form input[type='submit']:active {
-    background: #42c41b;
-}
