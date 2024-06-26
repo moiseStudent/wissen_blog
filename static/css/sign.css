@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .title_form-sign {
     text-align: center;
-    color:#23D9B7;
+    color:#ffffff;
 }
 
 .sign_form-content {
@@ -10,8 +13,8 @@
 }
 
 .sign_form-content .sign_form {
-    box-shadow: 2px 4px 12px #aaa;
-    background: #62BFED;
+    box-shadow: 0px 0px 2px 1px #aaa3;
+    background: #0003;
     display: flex;
     width: 40%;
     max-width: 1030px;
@@ -19,37 +22,41 @@
     align-content: center;
     padding: 40px;
     border-radius: 25px;
-    border-left:2px solid #62bfed79; 
-    border-bottom:2px solid #7a7a7a;
 }
 
 .sign_form-content .sign_form label {
     font-family: sans-serif;
     font-size: .9rem;
     margin: 5px;
-
+    color: #ffffff;
 }
 
 .sign_form-content .sign_form input {
     margin-bottom: 15px;
     width: 100%;
     border:none;
-    border-bottom: 3px #000 solid;
-    color: #C2BBF0;
+    border-bottom: 3px #fff6 solid;
+    color: #fff; /*color de las letras */
+    background-color: transparent;
+    transition: 0.1s;/*transicion*/
    
+}
+.sign_form-content .sign_form input::placeholder{
+    color: #fff;
+    font-family:montserrat ;
 }
 
 .sign_form-content .sign_form input:hover {
     transition: border-bottom;
-    transition-duration: s;
-    border-bottom: 3px #972f06 solid;
+    border-bottom: 3px #fff solid;
+    transition: 0.1s;/*transicion*/
 
 }
 
 .sign_form-content .sign_form input:focus {
     border: none;
     outline: none;
-    border-bottom: 3px #258807 solid;
+    border-bottom: 3px #fff solid;
 }
 
 .sign_form-content .sign_form input[type='submit'] {
@@ -65,6 +72,7 @@
 .sign_form-content .sign_form input[type='submit']:hover {
     cursor: pointer;
     background: #C2BBF0;
+
 }
 .sign_form input {
     background-color: #F1E3F3;
