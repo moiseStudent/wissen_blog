@@ -1,3 +1,5 @@
+@import url('var.css');
+
 ul{
     list-style-type: none;
 }
@@ -6,12 +8,12 @@ header {
     color:#fff;
 }
 .navbar{
-    background: #23B8EB;
+    /*background: var(--blue-green-navbar);*/
     height: 15vh;
-    width: 95vw;
+    width: 100vw;
     margin: auto;
-    margin-top: 5vh;
-    border-radius: 20px;
+    margin-top: 2vh;
+    border-radius: 10px;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
@@ -19,10 +21,11 @@ header {
     align-items: center;
     font-size: 10px;
     max-height: 60px;
+    color:var(--white);
     
 }
 .left_navbar{
-    color:#23D9B7;
+    color:var(--light-green);
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -63,6 +66,7 @@ header {
     font-family: sans-serif; /**temporal*/
     font-size: 1rem;
     padding-left: 5vw;
+    color:var(--white);
     
     
 }
@@ -76,7 +80,7 @@ header {
 }
 .text_linked{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
     
@@ -98,6 +102,7 @@ header {
 
 #contacto {
     background: #1ebda0;
+    color:var(--black);
 }
 .button_container{/*para evitar la compresion del el elemento button*/
     display: none;
