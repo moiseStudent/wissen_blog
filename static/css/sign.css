@@ -16,7 +16,7 @@
     box-shadow: 0px 0px 2px 1px #aaa3;
     background: #0003;
     display: flex;
-    width: 40%;
+    width: 35em;
     max-width: 1030px;
     flex-wrap: wrap;
     align-content: center;
@@ -41,10 +41,7 @@
     transition: 0.1s;/*transicion*/
    
 }
-.sign_form-content .sign_form input::placeholder{
-    color: #fff;
-    font-family:montserrat ;
-}
+
 
 .sign_form-content .sign_form input:hover {
     transition: border-bottom;
@@ -76,5 +73,22 @@
 }
 .sign_form input {
     background-color: #F1E3F3;
+}
+
+.div-recordarme{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.checkbox-recordarme{ /** nesesita resolverse ↓↓↓↓↓↓ */
+    float: left;
+}
+.div-precontainer-recordarme{
+    display: flex;
+}
+.div-precontainer-recordarme a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10em;
 }
 
