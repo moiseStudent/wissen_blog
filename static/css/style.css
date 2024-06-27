@@ -3,8 +3,8 @@
 body {
     font-family: sans-serif;
     background-image: url('../picture/BodyBackground2.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-color:#3590F3
+    background-color:#000
 }
