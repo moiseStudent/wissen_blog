@@ -13,12 +13,21 @@
 <body>
 
     {% block content%}
+    
         <!-- Contenido -->
         
     {% endblock %}
     
     <!-- Script -->
+
+    {% block script %}
+        <!-- If you need to use any script, you only need use Jinja2 and change it-->
+    {% endblock %}
+
+    <!-- This file's default script-->
     <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+    <!-- This file need to be check-->
     <script src="{{url_for('static',filename='js/navbar_dropdown.js')}}"></script>
 
 </body>
