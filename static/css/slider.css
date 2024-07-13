@@ -3,6 +3,7 @@
 .slider-container {
   width: 100%;
   border: 1px solid white;
+  display: flex;
 }
 
 .slider {
@@ -48,6 +49,8 @@
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
 }
+
+
 
 .prev {
   left: 10px;
