@@ -6,6 +6,7 @@ ul{
 
 header {
     color:#fff;
+    display: inline-flex;
 }
 .navbar{
     /*background: var(--blue-green-navbar);*/
