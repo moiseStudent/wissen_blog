@@ -6,33 +6,40 @@ const nextBtn = document.querySelector('.next');
 
 let currentSlide = 0
 
-slides[0].classList.add("active")
+function calcSlide(n){
+  return(n + slides.length) % slides.length
+} 
 
 //* funciones
 function showSlide(n){
-  slides[currentSlide].classList.remove("active")
-  currentSlide = (n + slides.length) % slides.length // limita que solamente pueda tener el valores menores a el maximo de slides positivo
-  slides[currentSlide].classList.add("active")
+  slides[calcSlide(1+currentSlide)].classList.remove("right")
+  slides[calcSlide(2+currentSlide)].classList.remove("left")
+  currentSlide = calcSlide(n)// limita que solamente pueda tener el valores menores a el maximo de slides positivo
+
+  slides[calcSlide(1+currentSlide)].classList.add("right")
+  slides[calcSlide(2+currentSlide)].classList.add("left")
 }
 
 function resetInterval(){
   clearInterval(autoplayInterval)
-  autoplayInterval = setInterval(nextSlide, 5000);
+  autoplayInterval = setInterval(rightSlide, 5000);
 }
-function nextSlide(){
+
+
+function leftSlide(){
   showSlide(currentSlide + 1)
   resetInterval()
 }
 
-function prevSlide(){
+function rightSlide(){
   showSlide(currentSlide - 1)
   resetInterval()
 }
 
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', leftSlide);
+nextBtn.addEventListener('click', rightSlide);
 
-let autoplayInterval = setInterval(nextSlide, 5000);
+let autoplayInterval = setInterval(rightSlide, 5000);
 //* bucle
 
 slides.forEach(slide => {
