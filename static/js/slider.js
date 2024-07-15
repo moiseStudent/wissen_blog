@@ -6,6 +6,7 @@ const nextBtn = document.querySelector('.next');
 
 let currentSlide = 0
 
+
 function calcSlide(n){
   return(n + slides.length) % slides.length
 } 
@@ -48,7 +49,7 @@ slides.forEach(slide => {
   });
   
   slide.addEventListener('mouseout', () => {
-    autoplayInterval = setInterval(nextSlide, 5000);
+    autoplayInterval = setInterval(rightSlide, 5000);
   });
 });
 

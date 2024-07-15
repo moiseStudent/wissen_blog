@@ -11,9 +11,11 @@ body {
     display: flex;
     flex-direction: column;
 }
-div{
-    width: 80%;
+
+body div{
+    width: 90%;
     height: 100%;
     margin: auto;
-    background-color: #171717;
+    background-color: #171717b4;
+    padding:1em ;
 }
