@@ -1,5 +1,8 @@
 @import url('sign.css');
 @import url('slider.css');
+@import url('cards.css');
+@import url('footer.css');
+@import url('recent_news.css');
 
 body {
     font-family: sans-serif;
@@ -7,15 +10,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-attachment: fixed;
+    background-position-y: center;
     background-color:#000;
-    display: flex;
+    color:#fff;
+    /*display: flex;*/
     flex-direction: column;
-}
-
-body div{
-    width: 90%;
-    height: 100%;
+   /* width: 90%;*/
     margin: auto;
-    background-color: #171717b4;
-    padding:1em ;
+    padding:1em;
 }

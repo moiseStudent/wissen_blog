@@ -1,19 +1,22 @@
 {% extends 'base.html' %}
 
-<!-- TItulo del sitio web-->
+<!-- Titulo del sitio web-->
 {% block title %}
     {{super()}} Inicio
 {% endblock %}
 
 {% block content%}
     {% include 'navbar.html' %}
-    <div>
+
     <!-- Only for a example-->
     <center>
-        <h1 style="color:white;">Bienvenido</h1>
+        <h1>Bienvenido</h1>
     </center>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum pariatur, laboriosam temporibus perspiciatis corporis rem provident. Aspernatur totam iure consectetur. Recusandae et magni nulla quod magnam nam est saepe esse! 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum pariatur, laboriosam temporibus perspiciatis
+        corporis rem provident. Aspernatur totam iure consectetur.
+        Recusandae et magni nulla quod magnam nam est saepe esse! 
     </p>
     <section class="slider-container">
         <button class="prev">&#10094;</button>
@@ -34,14 +37,81 @@
         
         <button class="next">&#10095;</button>
     </section>
-    <!-- <div class="article-link">
-        <figure>
-            <img src="https://res.cloudinary.com/dbulfrlrz/images/w_840,h_420,c_scale/f_auto,q_auto/f_auto,q_auto/v1720813476/wp-pme/what_is_data_sovereignty_blog_cover/what_is_data_sovereignty_blog_cover.?_i=AA" alt="">
-        </figure>
-        <a href="">ejemplo de una aplicacion</a>
-    </div> -->
-    </div>
 
+    <section class="cards_articles-container">
+        <!-- ESTO ES UN ARTICULO DE EJEMPLO -->
+            <section class='card_article'>
+
+                    <!--Imagen-->
+                    <div class="card_article-picture">
+                        <img src="{{url_for('static',filename='picture/html.png')}}" alt="">
+                    </div>
+                
+                    <div class="card_article-details">
+                        <h2>Titulo: {{ title }}</h2>
+                        <h3>Descripcion: {{ description }} Uso de html</h3>
+                        <h4>:Autor: {{ description }} Moises Perez</h3>
+                        <h3>Fecha: {{ description }} 12 de abril del 2020</h3>
+                    </div>
+                
+                    <div class="card_article-button">
+                        <a href="#">Leer articulo</a>
+                    </div>
+                
+                </section>
+
+                        <!-- ESTO ES UN ARTICULO DE EJEMPLO -->
+            <section class='card_article'>
+
+                    <!--Imagen-->
+                    <div class="card_article-picture">
+                        <img src="{{url_for('static',filename='picture/coding.jpg')}}" alt="">
+                    </div>
+                
+                    <div class="card_article-details">
+                        <h2>Titulo: {{ title }}El mundo del software</h2>
+                        <h3>Descripcion: {{ description }} </h3>
+                        <h4>:Autor: {{ description }} Luis fajardo</h3>
+                        <h3>Fecha: {{ description }} 12 de mayo del 2020</h3>
+                    </div>
+                
+                    <div class="card_article-button">
+                        <a href="#">Leer articulo</a>
+                    </div>
+                
+                </section> 
+                
+                
+                        <!-- ESTO ES UN ARTICULO DE EJEMPLO -->
+            <section class='card_article'>
+
+                    <!--Imagen-->
+                    <div class="card_article-picture">
+                        <img src="{{url_for('static',filename='picture/vueJS.jpg')}}" alt="">
+                    </div>
+                
+                    <div class="card_article-details">
+                        <h2>Titulo: {{ title }}Vue como tu amigo</h2>
+                        <h3>Descripcion: {{ description }} </h3>
+                        <h4>:Autor: {{ description }} Luis Fajardo</h3>
+                        <h3>Fecha: {{ description }} 12 de enero del 2021</h3>
+                    </div>
+                
+                    <div class="card_article-button">
+                        <a href="#">Leer articulo</a>
+                    </div>
+                
+                </section>   
+    </section>
+    
+    <!-- Ultimas noticias-->
+    {% include 'recent_news.html' %}
+
+    <!-- Wissen News Tech -->
+    {% include 'wissen_newsTech.html' %}
+
+    <!-- Footer - Pie de pagina -->
+    {% include 'footer.html' %}
 
     <!-- Script for slide -->
     {% block script %}

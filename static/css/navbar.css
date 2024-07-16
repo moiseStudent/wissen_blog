@@ -6,7 +6,7 @@ ul{
 
 header {
     color:#fff;
-    display: inline-flex;
+    display: flex;
 }
 .navbar{
     /*background: var(--blue-green-navbar);*/
@@ -24,8 +24,6 @@ header {
     font-size: 10px;
     max-height: 60px;
     color:var(--white);
-    background-color: #0003;
-    box-shadow: 0px 0px 2px 1px #aaa3;
 }
 .left_navbar{
     color:var(--light-green);

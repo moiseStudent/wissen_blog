@@ -9,19 +9,18 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/navbar.css')}}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/text.css')}}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/article-link.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/cards.css')}}">
+    {% block style %}{% endblock %}
     <title>{% block title %} Wissen | {% endblock %}</title>
 
 </head>
 <body>
 
     {% block content%}
-    
         <!-- Contenido -->
-        
     {% endblock %}
     
     <!-- Script -->
-
     {% block script %}
         <!-- If you need to use any script, you only need use Jinja2 and change it-->
     {% endblock %}
@@ -31,6 +30,5 @@
 
     <!-- This file need to be check-->
     <script src="{{url_for('static',filename='js/navbar_dropdown.js')}}"></script>
-
 </body>
 </html>
