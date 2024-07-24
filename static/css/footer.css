@@ -1,15 +1,6 @@
 footer {
-    width: 100%;
-    display: inline-block;
-    padding: 20px;
-    background: #1ebda0;
-    margin-top:3em;
-}
-
-footer p {
-    text-align:center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    margin: 0px auto;
-    color:#000;
+    background: #000;
+    color:#fff;
+    padding: 40px;
+    text-align: center;
 }

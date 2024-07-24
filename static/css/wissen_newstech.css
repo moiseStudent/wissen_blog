@@ -1,1 +1,39 @@
 /* Wissen News Tech */
+.wissen_newsTech {
+    display: flex;
+    background: #002447;
+    flex-direction: column;
+    align-content: center;
+    padding:40px;
+}
+
+.wissen_newsTech .wissen_newsTech-notify {
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+.wissen_newsTech .wissen_newsTech-notify p {
+    font-size: .8em;
+}
+
+.wissen_newsTech-form {
+    padding:10px;
+}
+
+.wissen_newsTech-form form input[type="email"]{
+    width: 40%;
+    padding: 10px;
+}
+
+.wissen_newsTech-form form input[type="email"]:focus {
+    outline:1px solid blue;
+}
+
+.wissen_newsTech-form form input[type="submit"]{
+    background: #ff0000;
+    padding: 10px;
+    color:#fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: .5rem;
+}

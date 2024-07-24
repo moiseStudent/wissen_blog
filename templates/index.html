@@ -2,120 +2,239 @@
 
 <!-- Titulo del sitio web-->
 {% block title %}
-    {{super()}} Inicio
+    {{super()}} Home
 {% endblock %}
 
 {% block content%}
     {% include 'navbar.html' %}
 
-    <!-- Only for a example-->
-    <center>
-        <h1>Bienvenido</h1>
-    </center>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Voluptatum pariatur, laboriosam temporibus perspiciatis
-        corporis rem provident. Aspernatur totam iure consectetur.
-        Recusandae et magni nulla quod magnam nam est saepe esse! 
-    </p>
-    <section class="slider-container">
-        <button class="prev">&#10094;</button>
-        <div class="slider">
-            <div class="slide">
-                <img src="https://media.istockphoto.com/id/2047220331/es/foto/generar-tecnolog%C3%ADa-de-ia-aprendizaje-autom%C3%A1tico-en-la-red-de-big-data-datos-cerebrales.jpg?s=2048x2048&w=is&k=20&c=BPVxwqH3PKd0Ovj5mEP8oktvZIvtPwMpXRAFI4toJ8s=" alt="Imagen 1">
-            </div>
-            
-            <div class="slide">
-                <img src="https://media.istockphoto.com/id/1139543056/es/foto/ilustraci%C3%B3n-3d-explosi%C3%B3n-de-la-bombilla-sobre-un-fondo-azul-con-concepto-de-pensamiento.jpg?s=2048x2048&w=is&k=20&c=TffimPQo_BiJ6Y8-NfRymA4bnEeI1zbhLhDv_0seRLs=" alt="Imagen 2">
-            </div>
-            
-            <div class="slide">
-                <img src="https://media.istockphoto.com/id/1979289147/es/foto/ciencia-del-an%C3%A1lisis-de-datos-y-big-data-con-tecnolog%C3%ADa-de-ia-el-analista-o-cient%C3%ADfico-utiliza.jpg?s=2048x2048&w=is&k=20&c=BiaRDYXssFd4WrWB1F8PqlJKVdVi77K9zpClepZKu_o=" alt="Imagen 3">
-            </div>
-            
+    <main class="container" style="width:100vw !important;">
+
+        {% include 'carousel.html' %}
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+          <div class="col-lg-6 px-0">
+            <h1 class="display-4 fst-italic">EL joven argentino messi del ajedrez</h1>
+            <p class="lead my-3" style="color:#000;">
+              Faustino oro es un ajedrecista de 12 anios Lorem, ipsum dolor.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem!
+            </p>
+            <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+          </div>
         </div>
+      
+        {% include 'cards.html' %}
+      
+
+
         
-        <button class="next">&#10095;</button>
-    </section>
 
-    <section class="cards_articles-container">
-        <!-- ESTO ES UN ARTICULO DE EJEMPLO -->
-            <section class='card_article'>
+        <div class="row g-5">
+          <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+              From the Firehose
+            </h3>
+      
+            <article class="blog-post">
+              <h2 class="display-5 link-body-emphasis mb-1">Sample blog post</h2>
+              <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+      
+              <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+              <hr>
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <h2>Blockquotes</h2>
+              <p>This is an example blockquote in action:</p>
+              <blockquote class="blockquote">
+                <p>Quoted text goes here.</p>
+              </blockquote>
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <h3>Example lists</h3>
+              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+              <ul>
+                <li>First list item</li>
+                <li>Second list item with a longer description</li>
+                <li>Third list item to close it out</li>
+              </ul>
+              <p>And this is an ordered list:</p>
+              <ol>
+                <li>First list item</li>
+                <li>Second list item with a longer description</li>
+                <li>Third list item to close it out</li>
+              </ol>
+              <p>And this is a definition list:</p>
+              <dl>
+                <dt>HyperText Markup Language (HTML)</dt>
+                <dd>The language used to describe and define the content of a Web page</dd>
+                <dt>Cascading Style Sheets (CSS)</dt>
+                <dd>Used to describe the appearance of Web content</dd>
+                <dt>JavaScript (JS)</dt>
+                <dd>The programming language used to build advanced Web sites and applications</dd>
+              </dl>
+              <h2>Inline HTML elements</h2>
+              <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+              <ul>
+                <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+              </ul>
+              <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+              <h2>Heading</h2>
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <h3>Sub-heading</h3>
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <pre><code>Example code block</code></pre>
+              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+            </article>
+      
+            <article class="blog-post">
+              <h2 class="display-5 link-body-emphasis mb-1">Another blog post</h2>
+              <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+      
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <blockquote>
+                <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+              </blockquote>
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <h3>Example table</h3>
+              <p>And don't forget about tables in these posts:</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Upvotes</th>
+                    <th>Downvotes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alice</td>
+                    <td>10</td>
+                    <td>11</td>
+                  </tr>
+                  <tr>
+                    <td>Bob</td>
+                    <td>4</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Charlie</td>
+                    <td>7</td>
+                    <td>9</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Totals</td>
+                    <td>21</td>
+                    <td>23</td>
+                  </tr>
+                </tfoot>
+              </table>
+      
+              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+            </article>
+      
+            <article class="blog-post">
+              <h2 class="display-5 link-body-emphasis mb-1">New feature</h2>
+              <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+      
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <ul>
+                <li>First list item</li>
+                <li>Second list item with a longer description</li>
+                <li>Third list item to close it out</li>
+              </ul>
+              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+            </article>
+      
+            <nav class="blog-pagination" aria-label="Pagination">
+              <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+              <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
+            </nav>
+      
+          </div>
+      
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+              <div class="p-4 mb-3 bg-body-tertiary rounded">
+                <h4 class="fst-italic">About</h4>
+                <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+              </div>
+      
+              <div>
+                <h4 class="fst-italic">Recent posts</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                      <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                      <div class="col-lg-8">
+                        <h6 class="mb-0">Example blog post title</h6>
+                        <small class="text-body-secondary">January 15, 2024</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                      <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                      <div class="col-lg-8">
+                        <h6 class="mb-0">This is another blog post title</h6>
+                        <small class="text-body-secondary">January 14, 2024</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                      <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                      <div class="col-lg-8">
+                        <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
+                        <small class="text-body-secondary">January 13, 2024</small>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="p-4">
+                <h4 class="fst-italic">Archives</h4>
+                <ol class="list-unstyled mb-0">
+                  <li><a href="#">March 2021</a></li>
+                  <li><a href="#">February 2021</a></li>
+                  <li><a href="#">January 2021</a></li>
+                  <li><a href="#">December 2020</a></li>
+                  <li><a href="#">November 2020</a></li>
+                  <li><a href="#">October 2020</a></li>
+                  <li><a href="#">September 2020</a></li>
+                  <li><a href="#">August 2020</a></li>
+                  <li><a href="#">July 2020</a></li>
+                  <li><a href="#">June 2020</a></li>
+                  <li><a href="#">May 2020</a></li>
+                  <li><a href="#">April 2020</a></li>
+                </ol>
+              </div>
+      
+              <div class="p-4">
+                <h4 class="fst-italic">Elsewhere</h4>
+                <ol class="list-unstyled">
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Facebook</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                    <!--Imagen-->
-                    <div class="card_article-picture">
-                        <img src="{{url_for('static',filename='picture/html.png')}}" alt="">
-                    </div>
-                
-                    <div class="card_article-details">
-                        <h2>Titulo: {{ title }}</h2>
-                        <h3>Descripcion: {{ description }} Uso de html</h3>
-                        <h4>:Autor: {{ description }} Moises Perez</h3>
-                        <h3>Fecha: {{ description }} 12 de abril del 2020</h3>
-                    </div>
-                
-                    <div class="card_article-button">
-                        <a href="#">Leer articulo</a>
-                    </div>
-                
-                </section>
-
-                        <!-- ESTO ES UN ARTICULO DE EJEMPLO -->
-            <section class='card_article'>
-
-                    <!--Imagen-->
-                    <div class="card_article-picture">
-                        <img src="{{url_for('static',filename='picture/coding.jpg')}}" alt="">
-                    </div>
-                
-                    <div class="card_article-details">
-                        <h2>Titulo: {{ title }}El mundo del software</h2>
-                        <h3>Descripcion: {{ description }} </h3>
-                        <h4>:Autor: {{ description }} Luis fajardo</h3>
-                        <h3>Fecha: {{ description }} 12 de mayo del 2020</h3>
-                    </div>
-                
-                    <div class="card_article-button">
-                        <a href="#">Leer articulo</a>
-                    </div>
-                
-                </section> 
-                
-                
-                        <!-- ESTO ES UN ARTICULO DE EJEMPLO -->
-            <section class='card_article'>
-
-                    <!--Imagen-->
-                    <div class="card_article-picture">
-                        <img src="{{url_for('static',filename='picture/vueJS.jpg')}}" alt="">
-                    </div>
-                
-                    <div class="card_article-details">
-                        <h2>Titulo: {{ title }}Vue como tu amigo</h2>
-                        <h3>Descripcion: {{ description }} </h3>
-                        <h4>:Autor: {{ description }} Luis Fajardo</h3>
-                        <h3>Fecha: {{ description }} 12 de enero del 2021</h3>
-                    </div>
-                
-                    <div class="card_article-button">
-                        <a href="#">Leer articulo</a>
-                    </div>
-                
-                </section>   
-    </section>
     
-    <!-- Ultimas noticias-->
-    {% include 'recent_news.html' %}
+      
+      </main>
 
     <!-- Wissen News Tech -->
     {% include 'wissen_newsTech.html' %}
 
     <!-- Footer - Pie de pagina -->
     {% include 'footer.html' %}
-
-    <!-- Script for slide -->
-    {% block script %}
-        <script src="{{url_for('static', filename='js/slider.js')}}"></script>
-    {% endblock %}
-
+    
 {% endblock %}

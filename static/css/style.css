@@ -1,22 +1,4 @@
 @import url('sign.css');
-@import url('slider.css');
-@import url('cards.css');
-@import url('footer.css');
-@import url('recent_news.css');
-
-body {
-    font-family: sans-serif;
-    background-image: url('../picture/BodyBackground2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-attachment: fixed;
-    background-position-y: center;
-    background-color:#000;
-    color:#fff;
-    /*display: flex;*/
-    flex-direction: column;
-   /* width: 90%;*/
-    margin: auto;
-    padding:1em;
-}
+@import url('header.css');
+@import url('wissen_newstech.css');
+@import url('footer.css')
