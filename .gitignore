@@ -34,5 +34,6 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+.vscode
 
 *.cfg
