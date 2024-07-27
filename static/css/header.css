@@ -123,3 +123,39 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.25rem;
   color: #727272;
 }
+
+/*<a> container ↓*/
+div.text-linked-container{
+  width:12em;
+}
+  
+
+/* sign up <a>*/
+
+a.sign-up{
+  padding: 1.2em;
+  border-radius: 10px;
+  transition: var(--transition);
+  background-color: var(--main-green);
+  text-decoration: none;
+  color: black!important;
+  font-weight: var(--font-weight);
+  border:1.2px solid black;
+}
+
+a.sign-up:hover{
+  background-color:var(--main-green-faded) ;
+}
+
+/*login*/
+
+a.sign-up.login{
+
+  background-color:white ;
+  border:1.2px solid black;
+
+}
+a.sign-up.login:hover{
+  background-color: var(--main-green);
+
+}

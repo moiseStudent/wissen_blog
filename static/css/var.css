@@ -3,12 +3,9 @@
 :root {
 
     /* Colores bases */
-    --white:#fff;
-    --light-green:#038C8C;
-    --green:#027373;
-    --dark-green:#014040;
-    --black:#01000D;
-    --dark-blue:#111426;
+    
+    --main-green:#1EBDA0;
+    --main-green-faded:#2ef1ce;
 
     /* Colores complementarios */
 
@@ -18,4 +15,12 @@
     --beige:#7B4D2C;
     --nose-como-llamarlo:#569EA6;
     --blue-green-navbar:#1c5f667c;
+
+    /*fuentes*/
+
+    --font-weight:500;
+
+    /*transition*/
+
+    --transition:0.2s;
 }
