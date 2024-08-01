@@ -1,0 +1,44 @@
+/* tamaño de la imagen*/
+
+.carousel-item img.d-block{
+    height: 500px;
+}
+/*sombra interna en el div padre*/
+.square{
+    box-shadow: var(--inside-box-shadow);
+}
+/*imagen dentro del boton*/
+
+.image-button{
+    height: 25px;
+    width: 25px;
+    margin-left: 0.2em;
+    transition: 150ms;
+    opacity: 0;
+}
+
+
+/*boton*/
+
+.button-continue a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding: 15px;
+    background-color: var(--main-green);
+    border-radius: 20px;
+    display: flex;
+    /*centrarlos horizontalmente*/
+    justify-content: center;
+    /*centrarlos verticalmente*/
+    align-items: center;
+    width: 13em;
+}
+
+
+/*texto del boton*/
+
+.button-continue span{
+    transition: 0.2s;
+}

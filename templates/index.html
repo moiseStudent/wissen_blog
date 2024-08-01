@@ -11,7 +11,7 @@
     <main class="container" style="width:100vw !important;">
 
         {% include 'carousel.html' %}
-        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary square">
           <div class="col-lg-6 px-0">
             <h1 class="display-4 fst-italic">EL joven argentino messi del ajedrez</h1>
             <p class="lead my-3" style="color:#000;">
@@ -19,7 +19,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem!
             </p>
-            <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+            <p class= "button-continue"><a href="#" class="button" id="button"><span>Continue reading </span><img src="{{url_for('static', filename='picture/flecha-correcta.png')}}" alt="→" class="image-button" id="image-button"></a></p>
           </div>
         </div>
       
