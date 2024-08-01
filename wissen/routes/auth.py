@@ -50,3 +50,8 @@ def register():
         flash(error)
     
     return render_template('auth/register.html')
+
+
+@bp.route('/login')
+def login():
+    return render_template('auth/login.html')
