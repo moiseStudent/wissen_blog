@@ -2,4 +2,5 @@
 
 flask --app wissen --debug
 
-Escribir mas tarde como inicializar la base de datos
+Iniciar la base de datos
+$ flask --app flaskr init-db
