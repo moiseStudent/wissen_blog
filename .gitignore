@@ -37,3 +37,15 @@ MANIFEST
 .vscode
 
 *.cfg
+
+.venv/
+
+instance/
+
+.pytest_cache/
+
+.coverage
+
+htmlcov/
+
+*.egg-info/
