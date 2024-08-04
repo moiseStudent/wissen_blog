@@ -4,6 +4,7 @@ import os
 from flask import Flask, render_template, redirect
 from . import db
 from .routes import auth
+from .routes import blog
 #from .routes import routes
 
 ### Funcion para crear apps de flask - Create apps flask function
@@ -43,20 +44,11 @@ def create_app(test_config=None):
 
     ### Routes and blueprints - Rutas y blueprints
     app.register_blueprint(auth.bp)
-   # app.register_blueprint(routes)
+    app.register_blueprint(blog.bp)
+    app.add_url_rule('/homepage', endpoint='index')
 
     @app.route('/')
     def root():
-        print("Visited")
         return redirect('homepage')
-
-    @app.route('/homepage')
-    def index():
-        return render_template('index.html')
-
-    ### Manejo de errores ###
-    @app.errorhandler(404)
-    def not_fount(error):
-        return render_template('404.html', error=error)
 
     return app
