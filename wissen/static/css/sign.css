@@ -3,7 +3,8 @@
 
 .title_form-sign {
     text-align: center;
-    color:#ffffff;
+    color:var(--font-color);
+
 }
 
 .sign_form-content {
@@ -15,8 +16,8 @@
 }
 
 .sign_form-content .sign_form {
-    box-shadow: 0px 0px 2px 1px #aaa3;
-    background: #0003;
+    box-shadow: var(--inside-box-shadow);
+    background: var(--white-faded);
     display: flex;
     width: 30em;
     max-width: 1030px;
@@ -24,40 +25,37 @@
     align-content: center;
     padding: 2.5em;
     border-radius: 25px;
+    margin-bottom:2em ;
 }
 
 .sign_form-content .sign_form label {
     font-family: sans-serif;
     font-size: .9rem;
     margin: 5px;
-    color: #ffffff;
+    color: var(--font-color);
 }
 
 .sign_form-content .sign_form input {
     margin-bottom: 15px;
     width: 100%;
-    border:none;
-    border-bottom: 3px #fff6 solid;
-    color: #fff; /*color de las letras */
+    outline: none;
+    color: var(--font-color); /*color de las letras */
     background-color: transparent;
     transition: 0.1s;/*transicion*/
-   
+    border: 0.8px solid #242424;
+    border-radius: 10px;
+    padding:0.5em ;
 }
-
-
 .sign_form-content .sign_form input:hover {
-    transition: border-bottom;
-    border-bottom: 3px #fff solid;
-    transition: 0.1s;/*transicion*/
-
+border: 0.8px solid black;
 }
 
-.sign_form-content .sign_form input:focus {
-    border: none;
-    outline: none;
-    border-bottom: 3px #fff solid;
-}
 
+.sign_form-content .sign_form input:focus-visible {
+box-shadow: 0px 0px 5px 2px var(--main-green);
+border: 0.8px solid var(--main-green);
+;
+}
 .sign_form-content .sign_form input[type='submit'] {
     margin: 10px auto;
     width: 90%;
@@ -76,22 +74,3 @@
 .sign_form input {
     background-color: #F1E3F3;
 }
-
-.div-recordarme{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    display: none;
-}
-.checkbox-recordarme{ /** nesesita resolverse ↓↓↓↓↓↓ */
-    float: left;
-}
-.div-precontainer-recordarme{
-    display: flex;
-}
-.div-precontainer-recordarme a {
-    text-decoration: none;
-    color: #fff;
-    padding-left: 10em;
-}
-

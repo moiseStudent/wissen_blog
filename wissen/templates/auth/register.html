@@ -1,44 +1,27 @@
-{% extends 'base.html' %}
-
+{% extends 'base.html' %} {% include 'navbar.html' %}
 <!-- TItulo del sitio web-->
-{% block title %}
-    {{super()}} Sign up
-{% endblock %}
+{% block title %} {{super()}} Sign up {% endblock %} {% block content%}
 
-{% block content%}
+<h1 class="title_form-sign">Registrarse</h1>
 
-    <h1 class="title_form-sign">Registrarse</h1>
+<div class="sign_form-content">
+    <form action="{{login}}" method="POST" class="sign_form">
+        <label for="name_user">Nombre: </label>
+        <input type="text" name="name_user" />
 
-    <div class="sign_form-content">
+        <label for="surname_user">Apellido: </label>
+        <input type="text" name="surname_user" />
 
-            <form action="{{login}}" method="POST" class="sign_form">
+        <label for="email">E-mail: </label>
+        <input type="email" name="username" id="username" required />
 
-                    <label for="name_user">Nombre: </label>
-                    <input type="text" name="name_user">
-            
-                    <label for="surname_user">Apellido: </label>
-                    <input type="text" name="surname_user">
-            
-                    <label for="email">E-mail: </label>
-                    <input type="email" name="username" id="username" required>
-            
-                    <label for="password">Crear contrasena: </label>
-                    <input type="password" name="password" id="password" required>
-            
-                    <label for="password-verify">Repetir contrasena: </label>
-                    <input type="password" name="password-verify" id="">
-            
-                    <input type="submit" value="Registrarse">
-                <div class="div-precontainer-recordarme">
-                    <div class="div-recordarme">
-                    <input type="checkbox" class="checkbox-recordarme"  name="" id="checkbox-recordarme">
-                    <label for="checkbox-recordarme" class="label-recordarme">Recordarme</label>
-                    </div>
-                </div>
-            </form>
+        <label for="password">Crear contrasena: </label>
+        <input type="password" name="password" id="password" required />
 
-    </div>
+        <label for="password-verify">Repetir contrasena: </label>
+        <input type="password" name="password-verify" id="" />
 
-
-
-{% endblock %}
+        <input type="submit" value="Registrarse" />
+    </form>
+</div>
+{% include 'footer.html' %} {% endblock %}

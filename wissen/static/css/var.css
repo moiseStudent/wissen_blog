@@ -7,17 +7,9 @@
     --main-green:#1EBDA0;
     --main-green-faded:#2ef1ce;
 
-    /* Colores complementarios */
-
-    --dark-red:#261101;
-    --blue-green:#1C5F66;
-    --dark-blue-green:#012326;
-    --beige:#7B4D2C;
-    --nose-como-llamarlo:#569EA6;
-    --blue-green-navbar:#1c5f667c;
-
+    --white-faded:rgb( 233, 236, 239);
     /*fuentes*/
-
+    --font-color: rgb(0,0,0) ;
     --font-weight:500;
 
     /*transition*/
