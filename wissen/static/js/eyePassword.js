@@ -19,3 +19,5 @@ eye2.addEventListener("click", () =>
         : ((eye2.src = "../static/picture/hide.png"),
           (passwordVerify.type = "text"))
 );
+
+/**/
