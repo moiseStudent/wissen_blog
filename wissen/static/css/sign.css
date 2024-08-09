@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+.title{
+    margin-left: 10px;
+}
 
 .title_form-sign {
     text-align: center;
     color:var(--font-color);
+    margin-top: 2em;
+    font-family: var(--form-font)
 
 }
 
@@ -29,7 +34,8 @@
 }
 
 .sign_form-content .sign_form label {
-    font-family: sans-serif;
+    font-family: var(--form-font);
+    font-weight: 600;
     font-size: .9rem;
     margin: 5px;
     color: var(--font-color);
@@ -62,13 +68,17 @@ border: 0.8px solid var(--main-green);
     border:none;
     padding: 15px;
     border-radius: 10px;
-    background: #1ebda0;
+    background: var(--main-green);
     color:#000;
+    font-family: var(--form-font);
+    font-weight: 600;
+    font-size: larger;
 }
 
 .sign_form-content .sign_form input[type='submit']:hover {
     cursor: pointer;
-    background: #C2BBF0;
+    background: var(--main-green-faded);
+    
 
 }
 .sign_form input {

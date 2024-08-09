@@ -1,6 +1,11 @@
-{% extends 'base.html' %} {% include 'navbar.html' %}
+{% extends 'base.html' %}
 <!-- TItulo del sitio web-->
 {% block title %} {{super()}} Sign up {% endblock %} {% block content%}
+<a
+    class="blog-header-logo text-body-emphasis text-decoration-none title"
+    href="#"
+    >Wissen Blog</a
+>
 
 <h1 class="title_form-sign">Registrarse</h1>
 
@@ -24,4 +29,4 @@
         <input type="submit" value="Registrarse" />
     </form>
 </div>
-{% include 'footer.html' %} {% endblock %}
+{% endblock %}
