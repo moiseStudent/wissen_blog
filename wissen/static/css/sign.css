@@ -100,3 +100,39 @@ border: 0.8px solid var(--main-green);
     width: 100%;
     align-items: center;
 }
+
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.checkbox-container p{
+    text-wrap: nowrap;
+    margin-left:5px ;
+}
+.checkbox-container input.checkbox{
+    width: 18px;
+    height: 18px;
+}
+.a-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+
+}
+.p{
+    margin-bottom: 0 !important ;
+    margin-right: 0.5em;
+    font-family: var(--form-font);
+    
+
+}
+.a-container a{
+    color: var(--main-green);
+    font-family: var(--form-font);
+    margin-left: auto;
+}
