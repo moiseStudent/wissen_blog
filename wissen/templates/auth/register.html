@@ -21,10 +21,35 @@
         <input type="email" name="username" id="username" required />
 
         <label for="password">Crear contrasena: </label>
-        <input type="password" name="password" id="password" required />
+        <div class="password-container" id="eye-container1">
+            <input type="password" name="password" class="password" required />
+            <div class="button-container">
+                <img
+                    src="../static/picture/view.png"
+                    class="image"
+                    id="eye1"
+                    alt=""
+                />
+            </div>
+        </div>
 
         <label for="password-verify">Repetir contrasena: </label>
-        <input type="password" name="password-verify" id="" />
+        <div class="password-container">
+            <input
+                type="password"
+                name="password-verify"
+                class="password"
+                required
+            />
+            <div class="button-container" id="eye-container2">
+                <img
+                    src="../static/picture/view.png"
+                    class="image"
+                    id="eye2"
+                    alt=""
+                />
+            </div>
+        </div>
 
         <input type="submit" value="Registrarse" />
     </form>

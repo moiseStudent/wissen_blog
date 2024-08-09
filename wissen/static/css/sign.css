@@ -7,7 +7,7 @@
 .title_form-sign {
     text-align: center;
     color:var(--font-color);
-    margin-top: 2em;
+    margin-top: 0.85em;
     font-family: var(--form-font)
 
 }
@@ -83,4 +83,20 @@ border: 0.8px solid var(--main-green);
 }
 .sign_form input {
     background-color: #F1E3F3;
+}
+.button-container{
+    display: inline-block;
+    margin: 3px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.sign_form .password {
+    width: 100%!important;
+}
+.password-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
 }
