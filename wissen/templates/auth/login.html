@@ -3,7 +3,7 @@
 {% block title %} {{super()}} Sign up {% endblock %} {% block content%}
 <a
     class="blog-header-logo text-body-emphasis text-decoration-none title"
-    href=""
+    href="/homepage"
     >Wissen Blog</a
 >
 
@@ -11,16 +11,10 @@
 
 <div class="sign_form-content">
     <form action="{{login}}" method="POST" class="sign_form">
-        <label for="name_user">Nombre: </label>
-        <input type="text" name="name_user" />
-
-        <label for="surname_user">Apellido: </label>
-        <input type="text" name="surname_user" />
-
-        <label for="email">E-mail: </label>
+        <label for="email">Ingresa tu nombre de usuario o email: </label>
         <input type="email" name="username" id="username" required />
 
-        <label for="password">Crear contrasena: </label>
+        <label for="password">Ingresa tu contrasena: </label>
         <div class="password-container" id="eye-container1">
             <input
                 type="password"
@@ -38,27 +32,20 @@
                 />
             </div>
         </div>
-
-        <label for="password-verify">Repetir contrasena: </label>
-        <div class="password-container">
-            <input
-                type="password"
-                name="password-verify"
-                class="password"
-                id="password-verify"
-                required
-            />
-            <div class="button-container" id="eye-container2">
-                <img
-                    src="../static/picture/view.png"
-                    class="image"
-                    id="eye2"
-                    alt=""
-                />
-            </div>
+        <div class="checkbox-container">
+            <input type="checkbox" class="checkbox" />
+            <p>Mantener Sesion Iniciada</p>
         </div>
 
-        <input type="submit" value="Registrarse" />
+        <input type="submit" value="Iniciar Sesión" />
+        <div class="a-container" style="margin-bottom: 0.5em">
+            <p class="p">¿ Olvidaste tu contraseña ?</p>
+            <a href="/">Recuperar contraseña</a>
+        </div>
+        <div class="a-container">
+            <p class="p">¿ No tienes cuenta ?</p>
+            <a href="/auth/register">Registrate</a>
+        </div>
     </form>
 </div>
 {% endblock %}
