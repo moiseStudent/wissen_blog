@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+<!-- TItulo del sitio web-->
+{% block title %} {{super()}} Sign up {% endblock %} {% block content%}
+<a
+    class="blog-header-logo text-body-emphasis text-decoration-none title"
+    href=""
+    >Wissen Blog</a
+>
+
+<h1 class="title_form-sign">Iniciar Sesión</h1>
+
+<div class="sign_form-content">
+    <form action="{{login}}" method="POST" class="sign_form">
+        <label for="name_user">Nombre: </label>
+        <input type="text" name="name_user" />
+
+        <label for="surname_user">Apellido: </label>
+        <input type="text" name="surname_user" />
+
+        <label for="email">E-mail: </label>
+        <input type="email" name="username" id="username" required />
+
+        <label for="password">Crear contrasena: </label>
+        <div class="password-container" id="eye-container1">
+            <input
+                type="password"
+                name="password"
+                class="password"
+                id="password-main"
+                required
+            />
+            <div class="button-container">
+                <img
+                    src="../static/picture/view.png"
+                    class="image"
+                    id="eye1"
+                    alt=""
+                />
+            </div>
+        </div>
+
+        <label for="password-verify">Repetir contrasena: </label>
+        <div class="password-container">
+            <input
+                type="password"
+                name="password-verify"
+                class="password"
+                id="password-verify"
+                required
+            />
+            <div class="button-container" id="eye-container2">
+                <img
+                    src="../static/picture/view.png"
+                    class="image"
+                    id="eye2"
+                    alt=""
+                />
+            </div>
+        </div>
+
+        <input type="submit" value="Registrarse" />
+    </form>
+</div>
+{% endblock %}
