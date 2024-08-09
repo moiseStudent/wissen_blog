@@ -1,6 +1,16 @@
 @import url('sign.css');
 @import url('header.css');
 @import url('wissen_newstech.css');
-@import url('footer.css')
+@import url('footer.css');
 
+/* Flashed messages */
+.flashed-sms {
+    position: fixed;
+    top:0;
+    margin-bottom: 1em;
+    width: 100%;
+}
 
+.flashed-sms .flash {
+    
+} 
