@@ -6,10 +6,12 @@
     
     --main-green:#1EBDA0;
     --main-green-faded:#2ef1ce;
+    --main-green-super-faded:#9bfae8;
 
     --white-faded:rgb( 233, 236, 239);
     /*fuentes*/
     --font-color: rgb(0,0,0) ;
+    --font-color-faded: rgb(59, 59, 59) ;
     --font-weight:500;
     --form-font: "InterVariable",sans-serif;
 
