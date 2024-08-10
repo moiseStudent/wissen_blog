@@ -1,15 +1,118 @@
-{% extends 'base2.html' %}
+{% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}New Post{% endblock %}</h1>
+<!-- Custom css -->
+{% block style %}
+  <link rel="stylesheet" href="{{url_for('static', filename='css/dashboard.css')}}">
 {% endblock %}
 
 {% block content %}
+
+<section class="dashboard-editor">
+
+  <form method="POST">
+
+    
+    <!-- Header-->
+    <header class="dashboard-editor_header">
+     
+
+      <div class="dashboard-editor_add-title">
+
+        <label for="title">Add title</label>
+
+        <input 
+        type="text"
+        name="title"
+        id="title"
+        placeholder="Titulo del post"
+        value="{{request.form['title']}}"
+        required
+        >
+
+      </div>
+
+    </header>
+
+    <!-- Dashboard' body -->
+    <section class="dashboard-editor_body">
+      <label>Add content</label>
+
+      <div class="dashboard-editor_body-container">
+          <header>
+              <nav>
+                <div class="write">
+                  <h3>Write</h3>
+                </div>
+      
+                <!-- Boton para asignar una seccion a el articulo -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Seccion del articulo
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Technology</a></li>
+                      <li><a class="dropdown-item" href="#">Design</a></li>
+                      <li><a class="dropdown-item" href="#">Programming</a></li>
+                      <li><a class="dropdown-item" href="#">Science</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                    </ul>
+                </div>
+      
+              </nav>
+            </header>
+      
+            <div class="textarea">
+                <textarea name="body" id="" cols="30" rows="10"></textarea>
+            </div>
+      </div>
+      
+
+      <div class="btn-form">
+        
+        
+        <div>
+            <input class="btn btn-success" type="submit" value="save">
+        </div>
+        <div>
+            <a class="btn btn-danger" href="/homepage">Cancelar</a>
+        </div>
+          
+      </div>
+
+    </section>
+    
+    
+    
+
+  </form>
+
+</section>
+
+
+{% endblock %}
+
+
+
+<!--
+
+
+
+
+
+
+
+  <h1>{% block title %}New Post{% endblock %}</h1>
+
+
   <form method="post">
     <label for="title">Title</label>
     <input name="title" id="title" value="{{ request.form['title'] }}" required>
+
     <label for="body">Body</label>
     <textarea name="body" id="body">{{ request.form['body'] }}</textarea>
     <input type="submit" value="Save">
   </form>
-{% endblock %}
+
+
+
+-->

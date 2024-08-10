@@ -1,0 +1,129 @@
+/* Create new post */
+
+/* Contenedor principal */
+.dashboard-editor {
+    width: 80vw;
+    position: absolute;
+    margin: auto;
+    margin-top: 1rem;
+    top:0;
+    bottom: o;
+    right: 0;
+    left:0;
+}
+
+/* Header dentro del contenedor principal */
+.dashboard-editor .dashboard-editor_header {
+    display: flex;
+    
+}
+
+.dashboard-editor .dashboard-editor_header .dashboard-editor_header-img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: .80rem;
+    padding: 10px;
+}
+
+/* Contenedor de la img de edit */
+.dashboard-editor .dashboard-editor_header .dashboard-editor_header-img img {
+    width: 100%;
+    
+}
+
+.dashboard-editor .dashboard-editor_header .dashboard-editor_add-title label {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+
+}
+
+.dashboard-editor .dashboard-editor_header .dashboard-editor_add-title {
+    width: 100%;
+}
+/* Agregar tituto del post */
+.dashboard-editor .dashboard-editor_header .dashboard-editor_add-title input {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 1.55rem;
+}
+
+.dashboard-editor .dashboard-editor_header .dashboard-editor_add-title input:focus {
+    border:1px solid #00f;
+}
+
+.dashboard-editor .dashboard-editor_body {
+    /*border: 1px solid #000;*/
+}
+
+.dashboard-editor .dashboard-editor_body  header {
+    /*border: 1px solid #000;*/
+}
+
+.dashboard-editor .dashboard-editor_body .textarea{
+    width: 100%;
+}
+
+.dashboard-editor .dashboard-editor_body .textarea textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.dashboard-editor .dashboard-editor_body {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /*margin-left: 4.80rem;*/
+}
+
+.dashboard-editor .dashboard-editor_body header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-editor .dashboard-editor_body header {
+    /*border: 1px solid #000;*/
+    /*background: #6464fc;*/
+}
+
+.dashboard-editor .dashboard-editor_body header nav div {
+    height: 100%;
+    padding: .76rem;
+}
+.dashboard-editor .dashboard-editor_body header nav .write{
+
+
+}
+
+.dashboard-editor .dashboard-editor_body h2 {
+    font-size: 1.2rem;
+}
+
+.dashboard-editor_body-container {
+    border: 1.5px solid #ccc;
+    border-radius: 7px;
+    background: #f0f4fa;
+    padding: 2rem;
+}
+
+
+
+.btn-form {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-right: 0px;
+}
+
+.btn-form div {
+    padding: .90rem;
+}
+
+
+.dropdown-item:hover{
+    background: #d3edfc;
+}

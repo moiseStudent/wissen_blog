@@ -1,5 +1,6 @@
+
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
+<title>{% block title %}{% endblock %} - Wissen</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 <style>
@@ -34,7 +35,7 @@ input[type=submit] { align-self: start; min-width: 10em; }
 
 
 <nav>
-  <h1>Flaskr</h1>
+  <h1>Wissen</h1>
   <ul>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
@@ -54,3 +55,4 @@ input[type=submit] { align-self: start; min-width: 10em; }
   {% endfor %}
   {% block content %}{% endblock %}
 </section>
+
