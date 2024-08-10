@@ -10,6 +10,7 @@ const passwordVerify = document.getElementById("password-verify");
 /*texto debajo del formulario*/
 const textContainer = document.getElementById("text-container");
 const textContainer2 = document.getElementById("text-container2");
+const textContainer3 = document.getElementById("text-container3");
 /*boton */
 const buttonSubmit = document.getElementById("button");
 eye1.addEventListener("click", () =>
@@ -29,14 +30,18 @@ eye2.addEventListener("click", () =>
 
 /*security login*/
 
-function passwordSpace(){
-  if(!passwordMain.value.includes(" ")){
-    
-  }
+function passwordSpace() {
+    if (passwordMain.value.includes(" ")) {
+        textContainer3.style.display = "flex";
+        return false;
+    } else {
+        textContainer3.style.display = "none";
+        return true;
+    }
 }
 
 function passwordLength() {
-    if (passwordMain.value.length > 8) {
+    if (passwordMain.value.length >= 8) {
         textContainer2.style.display = "none";
         return true;
     } else {
@@ -45,24 +50,28 @@ function passwordLength() {
     }
 }
 
-function passwordequal1() {
+function passwordEqual() {
     if (
         passwordMain.value === passwordVerify.value &&
         passwordVerify.value !== ""
     ) {
         textContainer.style.display = "none";
+        console.log("esto es");
         return true;
-    } else {
+    } else if (
+        passwordMain.value !== passwordVerify.value &&
+        passwordVerify.value !== ""
+    ) {
         textContainer.style.display = "flex";
         return false;
     }
 }
 function security1() {
-    if (
-        passwordLength() &&
-        passwordequal1() &&
-        
-    ) {
+    /*explicacion: si no se hace esto no se ejecutan algunas funciones*/
+    let result1 = passwordLength();
+    let result2 = passwordSpace();
+    let result3 = passwordEqual();
+    if (result1 && result2 && result3) {
         buttonSubmit.classList.remove("button-disabled");
     } else {
         buttonSubmit.classList.add("button-disabled");
