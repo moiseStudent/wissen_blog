@@ -38,6 +38,24 @@
                 />
             </div>
         </div>
+        <div class="text-container" id="text-container">
+            <img
+                src="../static/picture/circle_exclamation.png"
+                alt=""
+                class="image-password"
+            />
+            <p class="text-password">Las contraseñas no coinciden</p>
+        </div>
+        <div class="text-container" id="text-container2">
+            <img
+                src="../static/picture/circle_exclamation.png"
+                alt=""
+                class="image-password"
+            />
+            <p class="text-password">
+                la contraseña debe tener al menos 8 caracteres
+            </p>
+        </div>
 
         <label for="password-verify">Repetir contrasena: </label>
         <div class="password-container">
@@ -58,7 +76,12 @@
             </div>
         </div>
 
-        <input type="submit" value="Registrarse" />
+        <input
+            type="submit"
+            value="Registrarse"
+            class="button-disabled"
+            id="button"
+        />
     </form>
 </div>
 {% endblock %}

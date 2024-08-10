@@ -136,3 +136,30 @@ border: 0.8px solid var(--main-green);
     font-family: var(--form-font);
     margin-left: auto;
 }
+.image-password{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.text-password{
+    margin-bottom: 10px;
+    color: red;
+    font-family: var(--form-font);
+    font-size: 600;
+}
+
+.text-container{
+    display: none;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+width: 100%;
+
+}
+.button-disabled{
+    cursor: default!important;
+    pointer-events: none;
+    background-color: var(--main-green-super-faded)!important;
+    color: var(--font-color-faded)!important;
+}
