@@ -11,6 +11,7 @@ const passwordVerify = document.getElementById("password-verify");
 const textContainer = document.getElementById("text-container");
 const textContainer2 = document.getElementById("text-container2");
 const textContainer3 = document.getElementById("text-container3");
+const textContainer4 = document.getElementById("text-container4");
 /*boton */
 const buttonSubmit = document.getElementById("button");
 eye1.addEventListener("click", () =>
@@ -28,7 +29,21 @@ eye2.addEventListener("click", () =>
           (passwordVerify.type = "text"))
 );
 
-/*security login*/
+/*login security*/
+
+function passwordUpperAndLower() {
+    let contraseña = passwordMain.value;
+    if (
+        contraseña === contraseña.toUpperCase() ||
+        contraseña === contraseña.toLowerCase()
+    ) {
+        textContainer4.style.display = "flex";
+        return false;
+    } else {
+        textContainer4.style.display = "none";
+        return true;
+    }
+}
 
 function passwordSpace() {
     if (passwordMain.value.includes(" ")) {
@@ -56,7 +71,6 @@ function passwordEqual() {
         passwordVerify.value !== ""
     ) {
         textContainer.style.display = "none";
-        console.log("esto es");
         return true;
     } else if (
         passwordMain.value !== passwordVerify.value &&
@@ -71,7 +85,8 @@ function security1() {
     let result1 = passwordLength();
     let result2 = passwordSpace();
     let result3 = passwordEqual();
-    if (result1 && result2 && result3) {
+    let result4 = passwordUpperAndLower();
+    if (result1 && result2 && result3 && result4) {
         buttonSubmit.classList.remove("button-disabled");
     } else {
         buttonSubmit.classList.add("button-disabled");
@@ -80,3 +95,7 @@ function security1() {
 
 passwordMain.addEventListener("keyup", security1);
 passwordVerify.addEventListener("keyup", security1);
+buttonSubmit.addEventListener(
+    "mouseover",
+    () => (buttonSubmit.style.pointerEvents = "none")
+);

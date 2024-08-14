@@ -33,7 +33,7 @@
 
         <!-- Custom Css-->
         {% block style %}
-            <!-- ... -->
+        <!-- ... -->
         {% endblock %}
 
         <title>{% block title %} Wissen | {% endblock %}</title>
@@ -42,19 +42,19 @@
     <body>
         <!-- Content -->
         {% block content%}
-            <!-- ... -->
+        <!-- ... -->
         {% endblock %}
 
         <!-- Mensajes flasheados - Flashed Messages -->
         <section class="flashed-sms">
             {% for message in get_flashed_messages() %}
             <div class="flash alert alert-danger" role="alert" id="flashed-sms">
-                <button type="button"
+                <button
+                    type="button"
                     class="btn-close"
                     aria-label="Close"
                     onclick="flash_messages()"
-                >
-                </button>
+                ></button>
                 {{ message }}
             </div>
             {% endfor %}
@@ -71,14 +71,12 @@
 
         <!-- Auth Script-->
         <script src="{{url_for('static',filename='js/button.js')}}"></script>
-        <script src="{{url_for('static',filename='js/eyePassword.js')}}"></script>
+        <script src="{{url_for('static',filename='js/auth.js')}}"></script>
         <script src="{{url_for('static',filename='js/main.js')}}"></script>
 
-        
         <!-- Custom Scripts -->
         {% block script %}
-            <!-- ... -->
+        <!-- ... -->
         {% endblock %}
-
     </body>
 </html>

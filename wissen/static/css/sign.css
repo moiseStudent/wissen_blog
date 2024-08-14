@@ -64,7 +64,7 @@ border: 0.8px solid var(--main-green);
 }
 .sign_form-content .sign_form input[type='submit'] {
     margin: 10px auto;
-    width: 90%;
+    width: 100%;
     border:none;
     padding: 15px;
     border-radius: 10px;
@@ -162,4 +162,7 @@ width: 100%;
     pointer-events: none;
     background-color: var(--main-green-super-faded)!important;
     color: var(--font-color-faded)!important;
+}
+.a-container a {
+    text-align: right;
 }
