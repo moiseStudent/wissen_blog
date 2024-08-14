@@ -95,7 +95,3 @@ function security1() {
 
 passwordMain.addEventListener("keyup", security1);
 passwordVerify.addEventListener("keyup", security1);
-buttonSubmit.addEventListener(
-    "mouseover",
-    () => (buttonSubmit.style.pointerEvents = "none")
-);
