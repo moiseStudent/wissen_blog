@@ -2,5 +2,41 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    {{super()}} | (SERA_VARIABLE)
+    {{super()}} | variable
+{% endblock %}
+
+{% block content %}
+    {% include 'navbar.html' %}
+
+    <!-- Post para leer -->
+    <div class="post-container">
+        <div class="post-container-header">
+            <h2><b>{{ article['title'] }}</b></h2>
+        </div>
+
+        <div class="post-container-body">
+            <p>
+                {{article['body']}}
+            </p>
+        </div>
+
+        <div class="post-container-reference">
+            <h3>
+                <!--
+                    {{article['created']}}
+                -->
+                    
+            </h3>
+            
+        </div>
+    </div>
+    <hr>
+    {% include 'cards.html' %}
+    <hr>
+
+    <!-- Mas post de interes -->
+    <!-- Wissen News Tech -->
+{% include 'wissen_newsTech.html' %}
+    {% include 'footer.html'%}
+
 {% endblock %}

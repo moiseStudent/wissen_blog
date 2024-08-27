@@ -3,9 +3,12 @@ import os
 
 from flask import Flask, render_template, redirect
 from . import db
+
+### Import de los blueprints
 from .routes import auth
 from .routes import blog
-#from .routes import routes
+from .routes import articles
+from .routes import routes
 
 ### Funcion para crear apps de flask - Create apps flask function
 def create_app(test_config=None):
@@ -45,10 +48,12 @@ def create_app(test_config=None):
     ### Routes and blueprints - Rutas y blueprints
     app.register_blueprint(auth.bp)
     app.register_blueprint(blog.bp)
+    app.register_blueprint(articles.bp)
+    app.register_blueprint(routes.routes)
     app.add_url_rule('/homepage', endpoint='index')
-
-    @app.route('/')
-    def root():
-        return redirect('homepage')
+    
+    @app.errorhandler(404)
+    def not_found(error):
+        return "No encontrado"
 
     return app

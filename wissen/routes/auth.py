@@ -26,6 +26,8 @@ def register():
 
         error = None
 
+        ### Enviar un codigo de verificacion primero
+
         if not username:
             error = "Se requiere el nombre de usuario."
         
@@ -72,7 +74,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('index')) # cambiar nombre
+            return redirect(url_for('index')) 
         
         flash(error)
     

@@ -15,7 +15,7 @@
 
         <!-- Creador del post y fecha -->
         <p class="blog-post-meta">
-            <h6>Seccion: <a href="#">Tecnologia</a></h6>
+            <h6>Seccion: <a href="#">{{ post['section'] }}</a></h6>
             by <a href="#">{{ post['username'] }}</a> on {{ post['created'].strftime('%Y-%m-%d') }}
         
         </p>
@@ -24,7 +24,7 @@
         <p>
             {{ post['body'] }}
         </p>
-        <a href="#">Saber mas</a>
+        <a class="action" href="/post/{{post['id']}}">Leer mas</a>
     </article>
 
     <!-- Separador entre post -->

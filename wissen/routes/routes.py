@@ -11,4 +11,4 @@ def root():
 
 @routes.route('/homepage')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', test="Hola mundo")
