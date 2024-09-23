@@ -21,6 +21,7 @@ def register():
     if request.method == 'POST':
 
         username = request.form['username']
+        email = request.form['email']
         password = request.form['password']
         db = get_db()
 
@@ -28,8 +29,8 @@ def register():
 
         ### Enviar un codigo de verificacion primero
 
-        if not username:
-            error = "Se requiere el nombre de usuario."
+        if not email:
+            error = "Se requiere direccion de correo electronico"
         
         elif not password:
             error = 'la clave es requerida.'
@@ -37,14 +38,14 @@ def register():
         if error is None:
             try:
                 db.execute(
-                    "INSERT INTO user (username, password) VALUES (?, ?)",
-                    (username, generate_password_hash(password)),
+                    "INSERT INTO user (username,email, password) VALUES (?, ?, ?)",
+                    (username, email, generate_password_hash(password)),
                 )
 
                 db.commit()
             
             except db.IntegrityError:
-                error = f"El usuario: {username} ya esta registrado."
+                error = f"La cuenta asociada a: {email}, ya esta registrada."
             
             else:
                 return redirect(url_for("auth.login"))
@@ -56,13 +57,13 @@ def register():
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
     if request.method == 'POST':
-        username = request.form['username']
+        email = request.form['username']
         password = request.form['password']
 
         db = get_db()
         error = None
         user = db.execute(
-            'SELECT * FROM user WHERE username = ?', (username,)
+            'SELECT * FROM user WHERE email = ?', (email,)
         ).fetchone()
 
         if user is None:
